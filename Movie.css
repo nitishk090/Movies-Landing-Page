@@ -1,0 +1,480 @@
+
+
+
+body{
+    background-color: rgb(4, 4, 4);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+header {
+    position: relative;
+    width: 70%;
+    height: 90%;
+    overflow: hidden;
+    box-shadow: 0rem 0.625rem 1.563rem -0.5rem #000;
+    margin-right: 10.5rem;
+    margin-left: -8.25rem;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    opacity: .6;
+    z-index: -1;
+}
+
+header iframe {
+    position: absolute;
+    width: 120%;
+    height: 190%;
+    top: -53%;
+    z-index: -1;
+    right: -15%;
+
+}
+
+header nav {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .logo_ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+header nav .logo_ul img {
+    width: 3.125rem;
+    
+}
+
+header nav .logo_ul ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    
+}
+
+header nav .logo_ul li {
+    padding: 0.188rem 0.938rem;
+    
+}
+
+header nav .logo_ul li  a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.563rem;
+    font-weight: bold;
+    transition: .3s linear;
+}
+
+header nav .logo_ul li  a:hover {
+    color: rgb(255, 255, 255, .7);
+
+}
+
+.top {
+    position: absolute;
+    width: 20rem;
+    height: 39.375rem;
+    border-radius: 0.313rem;
+    right: 0;
+    top: 1.25rem;
+    z-index: 99999;
+    margin-right: 1.875rem;
+}
+
+
+.top h1 {
+    color: #fff;
+    font-size: 1.563rem;
+    padding-left: 0.625rem;
+}
+
+.top .card {
+    position: relative;
+    width: 100%;
+    height: 3.75rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.313rem;
+    padding: .188rem 0;
+    text-decoration: none;
+    border-radius: 10rem;
+}
+
+
+.top .card img {
+    width: 3.125rem;
+    height: 90%;
+    border-radius: 0.188rem;
+    margin-left: 1.7rem;
+    
+
+}
+
+.top .card .cont {
+    margin-left: 0.625rem;
+    color: #fff;
+    font-size: 0.625rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 15.625rem;
+    margin-top: 0.625rem;
+
+}
+
+.top .card .cont {
+    font-size: small;
+}
+
+header .content p  {
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-left: 3.438rem;
+}
+
+h1 {
+    color: #fff;
+    font-size: 1.875rem;
+
+}
+
+h2 {
+    font-size: 1.125rem;
+}
+
+select {
+    color: white;
+    background-color: #000;
+    padding: 0.625rem;
+    margin: 0.625rem;
+    
+}
+
+label {
+    color: white;
+}
+
+header section {
+    position: absolute;
+    width: 59.375rem;
+    height: auto;
+    padding: 0rem 3.125rem;
+    bottom: 1.25rem;
+    color: #fff;
+}
+
+header section .cards {
+    position: relative;
+    width: 100%;
+    height: 12.5rem;
+    
+    margin-top: 0.625rem;
+    display: flex;
+    align-items: center;
+
+}
+
+header section .cards .card {
+    position: relative;
+    width: 18.75rem;
+    height: 11.25rem;
+    border: 0.063rem solid #fff;
+    border-radius: 0.5rem;
+    margin-right: 0.625rem;
+    background: #000;
+    transition: 0.1s, linear;
+    margin-top: 0.625rem;
+    display: flex;
+    align-items: center;
+    margin-left: 0.625rem;
+    margin-bottom: 0.625rem;
+
+}
+
+header section .cards .card .poster{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+}
+
+header section .cards .card .cont{
+    position: absolute;
+    width: 100%;
+    bottom: 0.625rem;
+    left: 0;
+    color: #fff;
+    padding: 0rem 1.25rem;
+}
+
+header section .cards .card .cont p {
+    font-size: 0.938rem;
+    font-weight: bold;
+}
+
+
+.dropbtn {
+    color: rgb(252, 250, 250);
+    background-color: #040000;
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    font-weight: bold;
+    border-radius: 0.625rem;
+
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-flexbox;
+    
+    
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 21.875rem;
+    box-shadow: 0rem 0.5rem 1rem 0rem rgba(7, 0, 0, 0.2);
+    z-index: 1;
+    font-weight: bold;
+    
+    
+}
+
+
+.dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    display: block;
+    border-radius: 0.625rem;
+    
+}
+
+
+.dropdown-content a:hover {background-color: #084a99;}
+
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+.dropdown:hover .dropbtn {background-color: #084a99;}
+
+.dropdown-content a p {
+    font-size: smaller;
+    padding-left: 4.688rem;
+}
+
+.micon a img {
+    width: 3.75rem;
+    height: 2.5rem;
+    padding-right: 0.625rem;
+    margin-bottom: -1.875rem;
+}
+
+.top .card:hover {background-color: #084a99;}
+
+.movies {
+    position: absolute;
+    width: 20rem;
+    height: 39.375rem;
+    border-radius: 0.313rem;
+    right: 0;
+    top: 1.25rem;
+    z-index: 99999;
+    margin-right: 30rem;
+}    
+
+.movies h1 {
+    color: #fff;
+    font-size: 1.563rem;
+    padding-left: 0.625rem;
+}
+
+.movies .card {
+    position: relative;
+    width: 100%;
+    height: 3.75rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.313rem;
+    padding: 0.188rem 0;
+    text-decoration: none;
+    border-radius: 0.625rem;
+}
+
+
+.movies .card img {
+    width: 50rem;
+    height: 90%;
+    border-radius: 3rem;
+    margin-left: 8rem;
+
+}
+
+.movies .card .cont {
+    margin-left: 3.125rem;
+    color: #fff;
+    font-size: 0.625rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 150625rem;
+    margin-top: 0.625rem;
+
+}
+
+.movies .card .cont {
+    font-size: small;
+}
+
+
+.more {
+    margin-top: 53.125rem;
+    color: #fff;
+    position: absolute;
+    font-size: 1.5625rem;
+
+}
+
+.more .new .p3 {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+
+}
+
+.more .new {
+    position: relative;
+    width: 80rem;
+    height: 11.25rem;
+    border-radius: 0.5rem;
+    margin-right: 0.625rem;
+    background: #000;
+    transition: 0.1s, linear;
+    margin-top: 0.625rem;
+    display: flex;
+    align-items: center;
+    margin-left: 0.625rem;
+    margin-bottom: 0.625rem;
+
+}
+
+.more .new .a2 {
+    position: relative;
+    width: 18.75rem;
+    height: 11.25rem;
+    border: 0.063rem solid #fff;
+    border-radius: 0.5rem;
+    margin-right: 0.625rem;
+    background: #000;
+    transition: 0.1s, linear;
+    margin-top: 0.625rem;
+    display: flex;
+    align-items: center;
+    margin-left: 0.625rem;
+    margin-bottom: 0.625rem;
+}
+
+.more .new .a2 .cont2 p{
+    font-size: 0.938rem;
+    font-weight: bold;
+}
+
+.more .new .a2 .cont2 {
+    position: absolute;
+    width: 100%;
+    bottom: 0.625rem;
+    left: 0;
+    color: #fff;
+    padding: 0rem 1.25rem;
+}
+
+
+header section .cards .card .cont{
+    position: absolute;
+    width: 100%;
+    bottom: 0.625rem;
+    left: 0;
+    color: #fff;
+    padding: 0rem 1.25rem;
+}
+
+header section .cards .card .cont p {
+    font-size: 0.938rem;
+    font-weight: bold;
+}
+
+.footer {
+    color: #fff;
+    margin-top: 75rem;
+    position: absolute;
+}
+
+
+.search {
+    width: 220px;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 8px 15px;
+    
+}
+
+.search input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+::placeholder {
+    color: #ffffff ;
+}
+
+
+
+.search button {
+    border: 0;
+    border-radius: 30%;
+    height: 30px;
+    width: 40px;
+    cursor: pointer;
+    font-size: 20px;
+    background: transparent;
+
+    
+}
+
+
+
+
+
+
+
